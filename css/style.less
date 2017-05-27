@@ -1,6 +1,7 @@
 
 @orange: #e8683c;
 @gray: #b9b9b9;
+@blue: #337ab7;
 
 a {
 	color: @orange !important;
@@ -10,6 +11,10 @@ a {
 * {
 	outline: none !important;
 }
+h1 {
+	font-family: 'Russo One', sans-serif;
+}
+
 
 /*navbar*/
 nav.navbar {
@@ -72,13 +77,21 @@ nav.navbar {
 
 .bt {
 	color: white !important;
-	@media (min-width: 700px) {
+	@media (min-width: 768px) {
 		visibility: hidden;
 	}
-	@media (max-width: 700px) {
+	@media (max-width: 768px) {
 		visibility: visible;
 	}
-}
+	@media (max-width: 450px ) {
+		font-size: 12px;
+		padding: 5px;
+	}
+	@media (max-width: 350px){
+		padding:1px;
+	}
+}	
+
 
 /*carusel*/
 
@@ -87,7 +100,7 @@ nav.navbar {
 		color: wite;
 		font-family: 'Russo One', sans-serif; 
 	}
-	@media (max-width: 700px) {
+	@media (max-width: 768px) {
 		display:none;
 		
 		}
@@ -160,3 +173,109 @@ nav.navbar {
 	
 }
 
+.featurette-heading, liad {
+	font-family: 'Russo One', sans-serif;
+}
+
+.featurette-heading {
+	@media (max-width: 768px) {
+		font-size:25px;	
+	}
+	@media (max-width: 450px) {
+		font-size: 16px;
+	}
+
+}
+.lead {
+	@media (max-width: 768px) {
+		font-size:16px;
+	}
+	@media (max-width: 450px) {
+		font-size: 12px;
+	}
+}
+.featurette-image {
+	width: 550px;
+	height: 300px;
+	@media (max-width: 450px) {
+		display:none;
+	}
+}
+.mastfoot {
+	font-family: 'Russo One', sans-serif;
+	@media (max-width: 450px) {
+		font-size:12px;
+	}
+}
+.form {
+	margin-top: 50px;
+	input {
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+	.vad {
+		color: @blue;
+		font-size: 30px;
+		font-family: 'Russo One', sans-serif;
+	}
+	label {
+		font-family: 'Russo One', sans-serif;
+		color: @gray;
+	}
+	label:hover {
+		font-family: 'Russo One', sans-serif;
+		color: @blue;
+	}
+	.btn {
+		font-family: 'Russo One', sans-serif;
+		font-size: 16px;
+	}
+	select {
+		margin-bottom: 5px;
+		font-family: 'Russo One', sans-serif;
+		color: @blue;
+	}
+	option {
+		font-family: 'Russo One', sans-serif;
+		color: @blue;
+	}
+}
+
+.form-test {
+	form {
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+	input {
+		font-family: 'Russo One', sans-serif;
+		margin-top: 5px;
+	}
+	label {
+	font-family: 'Russo One', sans-serif;
+	color: @blue;
+	margin-left: 5px;
+	}
+	label:hover {
+		font-family: 'Russo One', sans-serif;
+		color:@orange;
+	}	
+
+	:checked+label {
+		font-family: 'Russo One', sans-serif;
+		color:@orange;
+	}
+	h1 {
+		color: @blue;
+		font-size: 30px;
+		font-family: 'Russo One', sans-serif;
+	}
+}
+.progress {
+	width: 100%;
+	font-family: 'Russo One', sans-serif;
+	height: 22px;
+	@media (max-width: 768px) {
+		display:none;
+	}
+}

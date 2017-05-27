@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Russo+One&amp;subset=cyrillic" rel="stylesheet"> 
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,23 +42,43 @@
          <ul class="nav navbar-nav navbar-right">
            <li><a href="#">Главная</a></li>
           </ul>
-       </div><!-- /.navbar-collapse -->    
-    </nav>
-        <div class="row">
-          <div class="form col-lg-12">
-            <h1 class="vad">Вход в кабинет администратора</h1>
-            <form action="">
-              <input type="text" id="login"><label for="login">Логин</label>
-              <br>
-              <input type="password" id="pass"><label for="pass">Пароль</label>
-              <br>
-              <input type="submit" class="btn btn-primary" value="Войти">
-            </form>
+       </div><!-- /.navbar-collapse -->
+      </nav>
 
-          </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+        Подготовка
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 form-test">
+        <h1>Выберите область</h1>
+        <form class="form" action="">
+          <select  name="" id="">
+            <option value="select1">Селект1</option>
+            <option value="select2">Селект2</option>
+            <option value="select3">Селект3</option>
+            <option value="select4">Селект4</option>
+            <option value="select5">Селект5</option>
+          </select>
+          <br>
+          <input type="radio" name="radio" value="radio1" id="radio1"><label for="radio1">Радио1</label></input>
+          <br>
+          <input type="radio" name="radio" value="radio2" id="radio2"><label for="radio2">Радио2</label></input>
+          <br>
+          <input type="radio" name="radio" value="radio3" id="radio3"><label for="radio3">Радио3</label></input>
+          <br>
+          <input type="radio" name="radio" value="radio4" id="radio4"><label for="radio4">Радио4</label></input>
+          <br>
+          <input type="radio" name="radio" value="radio5" id="radio5"><label for="radio5">Радио5</label></input>
+          <br>
+          <input type="submit" name="Отправить" class="btn btn-primary">
+        </form>
         </div>
       </div>
     </div>
+  </div>
+
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -6,6 +6,9 @@ a {
 * {
   outline: none !important;
 }
+h1 {
+  font-family: 'Russo One', sans-serif;
+}
 /*navbar*/
 nav.navbar {
   margin: 0 !important;
@@ -69,14 +72,25 @@ nav.navbar ul li:last-child a {
 .bt {
   color: white !important;
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .bt {
     visibility: hidden;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .bt {
     visibility: visible;
+  }
+}
+@media (max-width: 450px) {
+  .bt {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+@media (max-width: 350px) {
+  .bt {
+    padding: 1px;
   }
 }
 /*carusel*/
@@ -85,7 +99,7 @@ nav.navbar ul li:last-child a {
   color: wite;
   font-family: 'Russo One', sans-serif;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   #myCarousel {
     display: none;
   }
@@ -123,4 +137,114 @@ nav.navbar ul li:last-child a {
 }
 #myCarousel img {
   width: 1200px;
+}
+.featurette-heading,
+liad {
+  font-family: 'Russo One', sans-serif;
+}
+@media (max-width: 768px) {
+  .featurette-heading {
+    font-size: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .featurette-heading {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .lead {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .lead {
+    font-size: 12px;
+  }
+}
+.featurette-image {
+  width: 550px;
+  height: 300px;
+}
+@media (max-width: 450px) {
+  .featurette-image {
+    display: none;
+  }
+}
+.mastfoot {
+  font-family: 'Russo One', sans-serif;
+}
+@media (max-width: 450px) {
+  .mastfoot {
+    font-size: 12px;
+  }
+}
+.form {
+  margin-top: 50px;
+}
+.form input {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.form .vad {
+  color: #337ab7;
+  font-size: 30px;
+  font-family: 'Russo One', sans-serif;
+}
+.form label {
+  font-family: 'Russo One', sans-serif;
+  color: #b9b9b9;
+}
+.form label:hover {
+  font-family: 'Russo One', sans-serif;
+  color: #337ab7;
+}
+.form .btn {
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+}
+.form select {
+  margin-bottom: 5px;
+  font-family: 'Russo One', sans-serif;
+  color: #337ab7;
+}
+.form option {
+  font-family: 'Russo One', sans-serif;
+  color: #337ab7;
+}
+.form-test form {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+.form-test input {
+  font-family: 'Russo One', sans-serif;
+  margin-top: 5px;
+}
+.form-test label {
+  font-family: 'Russo One', sans-serif;
+  color: #337ab7;
+  margin-left: 5px;
+}
+.form-test label:hover {
+  font-family: 'Russo One', sans-serif;
+  color: #e8683c;
+}
+.form-test :checked + label {
+  font-family: 'Russo One', sans-serif;
+  color: #e8683c;
+}
+.form-test h1 {
+  color: #337ab7;
+  font-size: 30px;
+  font-family: 'Russo One', sans-serif;
+}
+.progress {
+  width: 100%;
+  font-family: 'Russo One', sans-serif;
+  height: 22px;
+}
+@media (max-width: 768px) {
+  .progress {
+    display: none;
+  }
 }
